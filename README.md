@@ -18,7 +18,7 @@ A modern web application that allows users to customize a car by selecting diffe
 
 ## 🖥️ Demo
 
-👉 https://oussamanajib-cs.github.io/apex-car-configurator-web/
+👉 https://oussnajib.github.io/apex-car-configurator-web/
 
 ---
 
@@ -33,7 +33,7 @@ A modern web application that allows users to customize a car by selecting diffe
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-git clone https://github.com/oussamanajib-cs/apex-car-configurator-web.git
+git clone https://github.com/ooussnajib/apex-car-configurator-web.git
 
 ### 2. Open the project
 Simply open index.html in your browser.
