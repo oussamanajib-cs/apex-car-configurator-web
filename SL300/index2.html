@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <title>Build your car - SL 300</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="logo">
+        <img src="../pics/logo/logo.png" alt="Apex logo">
+        <span class="material-symbols-outlined" id="darkmodeIcone">dark_mode</span>
+    </div>
+    
+    <!-- CUSTOMIZATION -->
+    <div class="custom">
+
+        <!-- TITLES -->
+        <div class="titles">
+            <h2 onclick="displayExt()">Exterior</h2>
+            <h2 onclick="displayInt()" id="intBtn">Interior</h2>
+            <h2 onclick="displayWheels()">Wheels</h2>
+            <div class="line"></div>
+        </div>
+
+
+        <div class="addition">
+            <span>+$0</span>
+        </div>
+        <div class="total">
+            <span>TOTAL:</span>
+            <span id="cartDisplay">$0</span>
+        </div>
+        <div class="addItem">
+            <button>ADD</button>
+        </div>
+        <div class="continueBtn">
+            <button id="continueBtn"><a href="../check out/index.html">Continue</a></button>
+        </div>
+        
+        
+
+                <!-- EXTERIOR -->
+                <section class="exterior" id="exterior">
+        <div class="colors"> 
+        <div class="colorBox">
+            <div class="color1" data-extcolor="blue"></div>
+            <h4>Dark blue</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color2" data-extcolor="chrome"></div>
+            <h4>Chrome</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color3" data-extcolor="red"></div>
+            <h4>Dark red</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color4"></div>
+            <h4>Black</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color5"></div>
+            <h4>White</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color6"></div>
+            <h4>light Blue</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color7"></div>
+            <h4>purple</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color8"></div>
+            <h4>Red</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color9"></div>
+            <h4>yellow</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color10"></div>
+            <h4>green</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color11"></div>
+            <h4>Orange</h4>
+        </div>
+        </div> 
+                   
+                </section>
+    
+                <!-- INTERIOR -->
+                <section class="interior" id="interior">
+        <div class="colors"> 
+        <div class="colorBox">
+            <div class="color1Int" data-intcolor="brownint"></div>
+            <h4>Brown</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color2Int" data-intcolor="blueint"></div>
+            <h4>Blue</h4>
+        </div>
+
+        <div class="colorBox">
+            <div class="color3Int" data-intcolor="redint"></div>
+            <h4>Dark red</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color4Int" ></div>
+            <h4>Beige</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color5Int" ></div>
+            <h4>Black</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color6Int" ></div>
+            <h4>Grey</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color7Int" ></div>
+            <h4>White</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color8Int" ></div>
+            <h4>Black/white</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color9Int"></div>
+            <h4>Black/red</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color10Int" ></div>
+            <h4>Black/yellow</h4>
+        </div>
+        <div class="colorBox">
+            <div class="color11Int"></div>
+            <h4>Blue/white</h4>
+        </div>
+        </div> 
+                </section>
+
+                <!-- WHEELS -->
+                <section class="wheels" id="wheels">     
+        <div class="blackWheels choiceWheels" >
+            <img src="../pics/wheels/BlackWheels.png" alt="black wheels" data-wheelcolor="black">
+            <h4>Black</h4>
+        </div>
+        <div class="goldWheels">
+            <img src="../pics/wheels/ChromeWheels.png" alt="Gold wheels" data-wheelcolor="gold">
+            <h4>Chrome</h4>
+        </div>
+        <div class="choiceWheels">
+            <img src="../pics/wheels/goldWheels.png" alt="Gold wheels" data-wheelcolor="gold">
+            <h4>gold</h4>
+        </div>
+        <div class="choiceWheels">
+            <img src="../pics/wheels/RedWheels.png" alt="Gold wheels" data-wheelcolor="gold">
+            <h4>Red</h4>
+        </div>
+        <div class="choiceWheels">
+            <img src="../pics/wheels/GreenWheels.png" alt="Gold wheels" data-wheelcolor="gold">
+            <h4>Green</h4>
+        </div>
+        <div class="choiceWheels">
+            <img src="../pics/wheels/BronzWheels.png" alt="Gold wheels" data-wheelcolor="gold">
+            <h4>Bronz</h4>
+        </div>
+                </section>
+
+        <!-- DESCRIPTION -->
+        <div class="description">
+            <p>An icon of automotive elegance, the SL 300 blends racing heritage with 
+                timeless design. Its legendary gullwing doors and sculpted silhouette 
+                capture the spirit of freedom and innovation, turning every road into 
+                a stage for pure driving passion.</p>
+        </div>
+
+    </div>
+
+    <!-- CAR PIC -->
+    <div class="CarPic">
+        <img id="carPrincipale" src="../pics/cars/sl 300/blue/black wheels/2.png" alt="SL 300" >
+        <img id="intImg" src="../pics/cars/sl 300/beigeint.png">
+    </div>
+
+    <!-- INFOS -->
+    <div class="infos">
+    <h3>SL 300</h3>
+    
+    <table class="table-top">
+        <tr>
+            <td id="table-Title">Power</td>
+            <td>215 hp</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Transmission</td>
+            <td>4-speed Manual</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Top Speed</td>
+            <td>~250 km/h</td>
+        </tr>
+        <tr>
+            <td id="table-Title">0-100 km/h</td>
+            <td>~8.8 seconds</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Drive Type</td>
+            <td>Rear-Wheel Drive</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Production</td>
+            <td>1954 – 1963</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Era</td>
+            <td>1954 - 1963</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Base Model</td>
+            <td>300 SL</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Body Style</td>
+            <td>Coupe / Roadster</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Door Type</td>
+            <td>Gullwing (Coupe)</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Passenger Count</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td id="table-Title">Engine</td>
+            <td>Inline-6, 3.0L</td>
+        </tr>
+    </table>
+</div>
+
+    <div class="smallpics">
+        <div onclick="imgActive(this)" class="img" ><img src="../pics/cars/sl 300/blue/black wheels/2.png" alt="SL 300"></div>
+        <div onclick="imgActive(this)" class="img" ><img src="../pics/cars/sl 300/blue/black wheels/3.png" alt="SL 300"></div>
+        <div onclick="imgActive(this)" class="img" ><img src="../pics/cars/sl 300/blue/black wheels/4.png" alt="SL 300"></div>
+        <div onclick="imgActive(this)" class="img" ><img src="../pics/cars/sl 300/blue/black wheels/1.png" alt="SL 300"></div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
