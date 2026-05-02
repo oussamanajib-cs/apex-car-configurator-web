@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT: FORM -->
+    <div class="checkout-form">
+        <h2>Billing details</h2>
+
+        <label>Full name</label>
+        <input type="text" placeholder="Full name ">
+
+        <label>Phone number </label>
+        <input type="text" placeholder="ex: 0660123456">
+
+        <label>E-mail address</label>
+        <input type="email" placeholder="****@gmail.com">
+
+        <label>Country/region </label>
+        <input type="text" placeholder="Your Country">
+
+        <label>City </label>
+        <input type="text" placeholder="City of residence">
+
+        <label>Address</label>
+        <input type="text" placeholder="Your Adresse">
+
+        <label>Postcode </label>
+        <input type="text" placeholder="ex: 333333">
+
+        <!--methode de paiement-->
+        <h2>PAYMENT METHOD</h2>
+        
+        <div class="radio-group">
+            <label class="radio-item">
+                <input type="radio" name="payment" value="card">
+                <span><i class="fa-regular fa-credit-card"></i> add new card</span>
+            </label>
+
+            <label class="radio-item">
+                <input type="radio" name="payment" value="paypal">
+                <span><i class="fa-brands fa-paypal" style="color: rgb(116, 192, 252);"></i> Paypal</span>
+            </label>
+
+            <label class="radio-item">
+                <input type="radio" name="payment" value="applepay">
+                <span><i class="fa-brands fa-apple" style="color: rgb(99, 230, 190);"></i> Apple Pay</span>
+            </label>
+
+        </div>
+        
+    </div>
+
+    <!-- RIGHT: ORDER -->
+    <div class="order-summary">
+        <h3>YOUR ORDER</h3>
+
+        <div class="product">
+            <img src="" alt="img" id="productImg">
+            <div>
+                <p id="productName">Product Name</p>
+                <p>1 × <span class="price"></span></p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row">
+            <span class="titlerow">Car price</span>
+            <span id="CarPrice" style="font-weight: bold;">$000</span>
+        </div>
+        <div class="row2">
+            <span class="titlerow">Custom price</span>
+            <span id="CustomPrice">$000</span>
+        </div>
+
+        <div class="total">
+            <span >Total</span>
+            <span id="sum" style="color: red;">$000</span>
+        </div>
+        <br>
+        <br>
+        <!-- Forms -->
+        <div id="card" class="form-section">
+            <h3>Card Info</h3>
+            <p style="color:green"> Your card information is safe </p><br>
+            <input type="text" placeholder="Card number"> <br>
+            <input type="text" placeholder="Expiration date"> <br>
+            <input type="text" placeholder="CVV"> <br>
+            <button class="btn">Confirm</button>
+        </div>
+
+        <div id="paypal" class="form-section">
+            <h3>PayPal Info</h3>
+            <input type="email" placeholder="PayPal email">
+            <button class="btn">Confirm</button>
+        </div>
+
+        <div id="applepay" class="form-section">
+            <h3>Apple Pay</h3>
+            <p>Authentification with Face ID / Touch ID or Passcode to confirm</p> <br>
+            <input type="password" placeholder="Passcode">
+            <button class="btn">Confirm</button>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

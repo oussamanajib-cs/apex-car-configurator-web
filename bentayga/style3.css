@@ -1,0 +1,651 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pour prendre en compte la bordure et le padding */
+}
+
+body{
+    background-color: #F5F5F0;
+}
+
+.logo{
+    height: 40px;
+}
+
+.logo img{
+    height: 180%;
+    margin-left: 20px;
+}
+
+.custom{
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 66.1%;
+    position: relative;
+    background-color: #FFF8F0;
+    box-shadow: 0 6px 10px rgb(0, 0, 0);
+}
+
+.CarPic{
+    width: 710px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    margin-left: 238px;
+    margin-top: -40%;
+    border: 2px  black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.smallpics{
+    width: 125px;
+    height:485px;
+    margin-left: 20px;
+    margin-top: -38%;
+}
+.img.active{
+    border-left: 4px solid #0A2540;
+    background:#eef3f8;
+}
+.infos{
+    border: 1px solid black;
+    width: 790px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.custom .titles{
+    position: absolute;
+    top: 50px;
+    cursor:pointer;
+    left: 21px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.line{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 128px;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+/*key controls================*/
+.interior{
+    display: none;
+}
+.exterior {
+    display: block;
+}
+.blackWheels, .goldWheels{
+    display: none;
+}
+#carPrincipale{
+    display: block;
+}
+#intImg{
+    display: none;
+}
+.smallpics{
+    display: block;
+}
+/*==========================*/
+
+.colors{
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 15px;                
+    justify-content: center;
+    margin-top: -90px; 
+}
+
+.colorBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.5s ease;
+}
+
+.colorBox:hover{
+    transform: translateY(-10px);
+}
+
+.color1, .color2, .color3, .color4, 
+.color5, .color6, .color7, .color8,
+.color9, .color10, .color11{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.color1{
+    background: linear-gradient(50deg, aqua, black);
+}
+
+.color2{
+    background: linear-gradient(50deg, #002C31, black);
+}
+
+.color3{
+    background-color: grey;
+}
+
+.color4{
+    background-color: #000000;
+}
+
+.color5{
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.color6{
+    background-color: lightblue;
+}
+
+.color7{
+    background-color: purple;
+}
+
+.color8{
+    background-color: red;
+}
+
+.color9{
+    background-color: yellow;
+}
+
+.color10{
+    background-color: green;
+}
+
+.color11{
+    background-color: orange;
+}
+
+.colorBox h4{
+    font-size: 14px;
+}
+
+.description{
+    position: absolute;
+    top:450px;
+    left: 20px;
+    width: 460px;
+    height: 120px;
+    display: flex; 
+    justify-content: space-between;
+    border-top: 1px solid rgb(90, 90, 90);
+    padding-top: 10px ;
+    background-color: #FFF8F0;
+}
+
+.description p{
+    font-size: 17px;
+    font-family: monospace;
+    text-align: center;
+}
+    
+.infos {
+    width: 790px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #FFF8F0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.infos h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.infos .table-top,
+.infos .table-bottom {
+    width: 100%;
+    border-collapse: collapse; /* Pour supprimer les bordures des cellules */
+}
+
+.infos .table-top tr,
+.infos  tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.infos .table-top td,
+.infos  td {
+    padding: 8px 5px;
+}
+
+.img{
+    border:none;
+    width: 125px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    object-fit: cover;
+}
+.smallpics img{
+    width: 120px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+/*------Wheels------*/
+.wheels{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: center;
+    width: 490px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 15px;                
+    justify-content: center;   
+}
+
+.wheels h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+}
+.wheels img{
+    width: 120px;
+    cursor: pointer;
+    margin-left: -3px;
+    transition: all 0.5s;
+}
+
+.wheels img:hover{
+    transform: rotate(700deg);
+}
+
+#intImg{
+    width: 800px;
+
+}
+
+#table-Title{
+    color:gray;
+}
+
+/*Interior*/
+.color1Int, .color2Int, .color3Int,
+.color4Int, .color5Int, .color6Int,
+.color7Int, .color8Int, .color9Int,
+.color10Int, .color11Int{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color1Int{
+    background-color: aqua;
+}
+
+.color2Int{
+    background-color:orange;
+}
+
+.color3Int{
+    background-color: white;
+    border: 1px solid black;
+}
+.color4Int{
+    background-color: beige;
+}
+.color5Int{
+    background-color: black;
+}
+.color6Int{
+    background-color: gray;
+}
+.color7Int{
+    background-color: gold;
+    border: 1px solid black;
+}
+.color8Int{
+    background: linear-gradient(132deg,black,white);
+}
+.color9Int{
+    background: linear-gradient(132deg,black,red);
+}
+.color10Int{
+    background: linear-gradient(132deg,black,yellow);
+}
+.color11Int{
+    background: linear-gradient(132deg,blue,white);
+}
+
+
+
+
+/*=======dark mode======*/
+.logo #darkmodeIcone{
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+body.dark-mode {
+    background-color: #121212; /* fond général */
+    color: #e0e0e0;           /* texte par défaut */
+}
+
+body.dark-mode .custom {
+    background-color: #1e1e1e;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.8);
+}
+
+body.dark-mode .description {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-top: 1px solid #444;
+}
+
+body.dark-mode .infos {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode .wheels h4,
+body.dark-mode .colorBox h4 {
+    color: #e0e0e0;
+}
+
+body.dark-mode #table-Title {
+    color: #bbb;
+}
+
+body.dark-mode .line{
+    background-color: white;
+}
+
+/* Les images restent inchangées, mais tu peux ajouter un filtre si tu veux */
+body.dark-mode img {
+    filter: brightness(0.9);
+}
+
+body.dark-mode .CarPic{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+body.dark-mode .addition span{
+    color: white;
+}
+
+body.dark-mode .total{
+    color: white;
+}
+
+body.dark-mode .continueBtn button{
+    color: black;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+body.dark-mode .continueBtn button:hover{
+    background-color: #ff0000;
+    color: white;
+}
+
+body.dark-mode .continueBtn a{
+    color: black;
+}
+
+/*Total price*/
+.addition span{
+    color: #121212;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+}
+
+.total{
+    color: #121212;
+    font-size: 25px;
+    position: absolute;
+    top: 410px;
+}
+.total span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.continueBtn{
+    position: absolute;
+    top: 410px;
+    right: 40px;
+}
+
+.continueBtn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.continueBtn button{
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+.continueBtn button:hover{
+    background-color: #ff0000;
+}
+
+.addItem{
+    position: absolute;
+    top: 410px;
+    right: 145px;
+}
+
+.addItem button{
+    padding: 10px 20px;
+    background-color: rgb(1, 168, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.addItem button:hover{
+    background-color: darkgreen;    
+}
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* GLOBAL */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* LOGO */
+    .logo img {
+        height: 80px;
+        margin-left: -190px;
+    }
+    .titles h2{
+        font-size: 18px;
+    }
+
+    /* CAR IMAGE */
+    .CarPic {
+        width: 95%;
+        height: auto;
+        margin: 20px 0;
+        margin-top: 20px;
+    }
+
+    #carPrincipale {
+        width: 100%;
+        height: auto;
+    }
+
+    #intImg {
+        width: 100%;
+    }
+
+    /* SMALL PICS */
+    .smallpics {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .smallpics img {
+        width: 70px;
+        margin: 0;
+    }
+
+    /* CUSTOM PANEL */
+    .custom {
+        width: 95%;
+        height: auto;
+        margin: 0;
+        margin-top: 30px;
+        padding: 20px;
+        position: relative;
+    }
+
+    /* TITLES */
+    .custom .titles {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    /* COLORS */
+    .colors {
+        width: 100%;
+        margin-top: 0;
+        gap: 10px;
+    }
+
+    .color1, .color2, .color3, .color4,
+    .color5, .color6, .color7, .color8,
+    .color9, .color10, .color11,
+    .color1Int, .color2Int, .color3Int,
+    .color4Int, .color5Int, .color6Int,
+    .color7Int, .color8Int, .color9Int,
+    .color10Int, .color11Int {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* WHEELS */
+    .wheels {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .wheels img {
+        width: 80px;
+    }
+
+    /* DESCRIPTION */
+    .description {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .description p {
+        font-size: 15px;
+    }
+
+    /* INFOS TABLE */
+    .infos {
+        width: 95%;
+        margin: 20px 0;
+    }
+
+    /* BUTTONS + TOTAL */
+    .addition span {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .total {
+        position: relative;
+        top: 0;
+        margin-top: 10px;
+    }
+
+    .addItem,
+    .continueBtn {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .continueBtn {
+        float: right;
+    }
+}
