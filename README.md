@@ -30,36 +30,6 @@ A modern web application that allows users to customize a car by selecting diffe
 
 ---
 
-## 📂 Project Structure
-apex-car-configurator/
-│
-├── index.html
-├── script.js
-├── style.css
-├── README.md
-│
-├── bentayga/
-│   ├── index3.html
-│   ├── script3.js
-│   └── style3.css
-│
-├── check out/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── pics/
-│   ├── cars/
-│   ├── highlight/
-│   ├── logo/
-│   ├── wheels/
-│   ├── rolls royce/
-│   ├── SL300/
-│   └── video/
-
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
